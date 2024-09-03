@@ -1,0 +1,38 @@
+Instalación de librerias 
+
+//Creación del proyecto
+npm init
+
+//Librerias de desarrollo
+npm i cors
+npm i morgan
+npm i express
+npm i mongoose
+npm i bcryptjs 
+npm i jsonwebtoken
+
+//Librerias para 
+npm i dotenv --save-dev
+npm i nodemon --save-dev
+npm i @types/cors --save-dev
+npm i @types/morgan --save-dev
+npm i @types/express --save-dev
+npm i @types/jsonwebtoken --save-dev
+
+//Para el typescript
+tsc --init 
+
+Si no esta instalado npm i -g typescript
+
+//SI SALIO ERROR, ABRIR LA POWERSHEL EN ADMINISTRADOR:
+
+get-executionpolicy 
+
+Si sale Restricted ponemos
+
+set-executionpolicy unrestricted
+
+// Agregar esoto en el package, en la sección de scripts
+
+    "build": "tsc -w"
+    "dev": "nodemon build/index.js"
